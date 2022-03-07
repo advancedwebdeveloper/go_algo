@@ -90,13 +90,14 @@ fmt.Print("]")
 		index++
 	}
 
-	// here we append to the temporary slice the remaining elements
-	// that were not picked in the loop above
-	// first we do it for the left and the for the right sub-slice
-	// one of them will not contain any remaining elements
-	// so will make no changes
+	fmt.Println("here we append to the temporary slice the remaining elements
+	 that were not picked in the loop above
+	first we do it for the left and the for the right sub-slice
+	one of them will not contain any remaining elements
+	so will make no changes")
+	
 	copy(temp[index:rightEnd+1], sorted[right:rightEnd+1])
-	copy(temp[index:rightEnd+1], sorted[left:leftEnd+1])
+	copy(ttemp[index:rightEnd+1], sorted[left:leftEnd+1])
 	// finally we store the sorted numbers from the temporary slice
 	// into our sorted slice
 	copy(sorted, temp)
