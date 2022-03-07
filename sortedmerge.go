@@ -71,10 +71,20 @@ func merge(sorted []int, leftStart int, rightEnd int) {
 			fmt.Print("] < sorted[")
 			fmt.Print(right)
 			fmt.Print("]")
-			temp[index] = sorted[left]
-			left++
+			
+temp[index] = sorted[left]
+fmt.Println("Iterating left variable from ")
+fmt.Print(left)
+fmt.Print(" to ")
+left++
+fmt.Print(left)
 		} else {
 			temp[index] = sorted[right]
+fmt.Println("temp["]
+fmt.Print(index)
+fmt.Print("] = sorted[")
+fmt.Print(right)
+fmt.Print("]")
 			right++
 		}
 		index++
