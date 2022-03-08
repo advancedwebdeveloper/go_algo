@@ -37,8 +37,17 @@ func mergeSort(items []int) []int {
 		right = make([]int, num-middle)
 	)
 	for i := 0; i < num; i++ {
+
 		if i < middle {
+			fmt.Println(i)
+			fmt.Print(" < ")
+			fmt.Println(middle)
+
 			left[i] = items[i]
+			fmt.Println("left[")
+			fmt.Print(i)
+			fmt.Print("] = ")
+			fmt.Print(items[i])
 		} else {
 			right[i-middle] = items[i]
 		}

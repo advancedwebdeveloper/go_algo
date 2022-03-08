@@ -28,6 +28,7 @@ func generateSlice(size int) []int {
 func MergeSort(slice []int) []int {
 
 	if len(slice) < 2 {
+		fmt.Println("returning slice , in case if it's length is less then 2")
 		return slice
 	}
 	mid := (len(slice)) / 2
