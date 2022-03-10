@@ -51,10 +51,21 @@ func merge(L, R []int) []int {
 		fmt.Print("] = L[")
 		fmt.Print(i)
 		fmt.Print("]")
+		fmt.Println("Increasing i's value from ")
+		fmt.Print(i)
+		fmt.Print(" to ")
 		i++
+		fmt.Print(i)
+		fmt.Print("Increasing k's value from ")
+		fmt.print(k)
 		k++
+		fmt.Print(" to ")
+		fmt.Print(k)
 	}
 	for j < len(R) {
+		fmt.Println(j)
+		fmt.Println(" < ")
+		fmt.Println(len(R))
 		A[k] = R[j]
 		j++
 		k++
