@@ -85,9 +85,23 @@ fmt.Print(index)
 fmt.Print("] = sorted[")
 fmt.Print(right)
 fmt.Print("]")
+	    fmt.Println("Increasing right's value from ")
+	    fmt.Print(right)
+	    fmt.Print(" to ")
 			right++
+	    fmt.Print(" ")
+	    mt.Print(right)
+		}
+	    
 		}
 		index++
+	    fmt.Println("Increasing the value of index from ")
+	    fmt.Print(index)
+	    
+	    fmt.Print(" to ")
+			
+	    fmt.Print(" ")
+	    mt.Print(index)
 	}
 
 	fmt.Println("here we append to the temporary slice the remaining elements
