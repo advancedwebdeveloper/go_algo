@@ -26,15 +26,28 @@ func generateSlice(size int) []int {
 
 func mergeSort(items []int) []int {
 	var num = len(items)
-
+	fmt.Println("the langth of the array is ")
+	fmt.Print(num)
+	
 	if num == 1 {
+		fmt.Println("return an incoming array, if it's length is 1")
 		return items
 	}
-
+	fmt.Println("Middle position is picked at ")
 	middle := int(num / 2)
+	fmt.Print(middle)
+	fmt.Print(", hence ")
+	fmt.Print(num)
+	fmt.Print(" / 2 = ")
+	fmt.Print(float32(num)/2)
 	var (
 		left  = make([]int, middle)
 		right = make([]int, num-middle)
+		fmt.Println(num)
+		fmt.Print(" - ")
+		fmt.Print(middle)
+		fmt.Print(" = ")
+		fmt.Print(num-middle)
 	)
 	for i := 0; i < num; i++ {
 
