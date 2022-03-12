@@ -15,5 +15,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: go run merge.go
-      - name: Merging and sorting examples
       - run: go run mege-with-sorting-func.go
