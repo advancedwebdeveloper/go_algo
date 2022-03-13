@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
-on: [push]
+on: [discussion_comment]
 jobs:
-  Explore-GitHub-Actions:
+  Tracking_algo:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Investigating implementations of the merge-sort algorithms"
@@ -13,5 +13,3 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: go run merge.go
-      - name: echo "Another merge-sort implementation"
-        run: go run sortedmerge.go
