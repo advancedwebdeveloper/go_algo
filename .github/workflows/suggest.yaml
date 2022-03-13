@@ -13,3 +13,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: go run merge.go
+
